@@ -1,4 +1,10 @@
-﻿using System;
+using Syncfusion.XForms.iOS.BadgeView;
+using Syncfusion.XForms.iOS.Graphics;
+using Syncfusion.XForms.iOS.Cards;
+using Syncfusion.XForms.iOS.Border;
+using Syncfusion.ListView.XForms.iOS;
+using Syncfusion.XForms.iOS.Buttons;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -23,6 +29,11 @@ namespace FtMsngr.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            SfBadgeViewRenderer.Init();
+            SfCardViewRenderer.Init();
+            SfBorderRenderer.Init();
+            SfListViewRenderer.Init();
+            SfButtonRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
