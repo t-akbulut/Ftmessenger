@@ -39,7 +39,7 @@ namespace FtMsngr
         {
             InitializeComponent();
 
-            MainPage = new Views.Chat.ChatMessagePage();
+            MainPage = new Views.MainPage();
         }
 
         protected override void OnStart()

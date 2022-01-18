@@ -10,15 +10,24 @@
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
        
-        <BoxView Color="Green" />
-        <StackLayout Grid.Row="1" BackgroundColor="Gainsboro" Padding="5">
-            
-             
-            
-            <BoxView WidthRequest="80" Color="Blue" />
-            <BoxView  Color="Blue" />
-            <BoxView  Color="Blue" />
+        <BoxView Grid.Row="0" Color="Green" />
+        <ScrollView Grid.Row="1">
+        <StackLayout BindableLayout.ItemsSource="{x:Static local:NamedColor.All}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                        <BoxView Color="{Binding Color}"
+                                 HeightRequest="32"
+                                 WidthRequest="32"
+                                 VerticalOptions="Center" />
+                        <Label Text="{Binding FriendlyName}"
+                               FontSize="24"
+                               VerticalOptions="Center" />
+                    </StackLayout>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
         </StackLayout>
+    </ScrollView>
         
          <Frame Grid.Row="2" Margin="0" Padding="5">
              <Grid>

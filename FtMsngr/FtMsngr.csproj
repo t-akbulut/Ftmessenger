@@ -25,15 +25,12 @@
     <None Remove="sqlite-net-pcl" />
     <None Remove="Views\Controls\" />
     <None Remove="Themes\" />
-    <None Remove="Views\Chat\" />
-    <None Remove="Views\Chat\Selectors\" />
     <None Remove="Helpers\" />
     <None Remove="ViewModels\" />
     <None Remove="ViewModels\Chat\" />
     <None Remove="Behaviors\" />
     <None Remove="Behaviors\Chat\" />
     <None Remove="Models\Chat\" />
-    <None Remove="Views\Chat\Templates\" />
     <None Remove="Converters\" />
     <None Remove="Controls\" />
     <None Remove="Syncfusion.Xamarin.SfListView" />
@@ -44,15 +41,12 @@
   <ItemGroup>
     <Folder Include="Views\Controls\" />
     <Folder Include="Themes\" />
-    <Folder Include="Views\Chat\" />
-    <Folder Include="Views\Chat\Selectors\" />
     <Folder Include="Helpers\" />
     <Folder Include="ViewModels\" />
     <Folder Include="ViewModels\Chat\" />
     <Folder Include="Behaviors\" />
     <Folder Include="Behaviors\Chat\" />
     <Folder Include="Models\Chat\" />
-    <Folder Include="Views\Chat\Templates\" />
     <Folder Include="Converters\" />
     <Folder Include="Controls\" />
   </ItemGroup>
